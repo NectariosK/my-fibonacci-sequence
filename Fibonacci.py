@@ -8,6 +8,14 @@ def fibonacci(number):
 		a = b 
 		b = temp + b
 
+
+# Fibonacci, Golden Formula
+def fib( n: int) -> int:
+    phi = (1.0 - sqrt(5)) / 2.0
+    Phi = (1.0 + sqrt(5)) / 2.0
+    return (int)(( pow(Phi, n) - pow(phi,n) ) / sqrt(5))
+
+
 for x in fibonacci(20):
 	print(x)
 
